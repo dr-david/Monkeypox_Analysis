@@ -63,11 +63,8 @@ rule download_fastq:
 
             try:
                 shell(
-                    "fasterq-dump"
-                    " --threads {threads}"
-                    " -p"  # --progress
+                    "fastq-dump"
         " --outdir {outdir}"
-                    " --temp {output.temp_dir}"
                     " {wildcards.accession}"
                     " > >(tee {log.outfile}) 2>&1"
                 )
