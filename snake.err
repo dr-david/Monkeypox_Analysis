@@ -1,0 +1,6 @@
+Building DAG of jobs...
+MissingInputException in line 1 of /cluster/home/drdavid/Monkeypox_Analysis/workflow/rules/visualize_results.smk:
+Missing input files for rule snv_coverage_plot:
+    output: results/analysis/plots/snv_coverage_plot.pdf
+    affected files:
+        resources/references/genes.csv

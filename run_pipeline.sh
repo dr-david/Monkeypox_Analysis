@@ -3,7 +3,7 @@
 bsub \
   -N \
   -R 'rusage[mem=15000]' \
-  -q normal.120h \
+  -q normal.4h \
   -oo snake.out -eo snake.err \
 snakemake \
   --profile lsf \
